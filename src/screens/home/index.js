@@ -16,7 +16,6 @@ export default function Home() {
           <h1>#hellodjamo</h1>
           <p
             style={{
-              fontSize: "20px",
               textAlign: "left",
               display: "flex",
               flexDirection: "column",
@@ -28,7 +27,7 @@ export default function Home() {
             <span>Ouvrez un compte gratuit maintenant en un clic.</span>
           </p>
           <div className="buttonn">
-            <Buttony text="Ouvrir un compte gratuit" top={16} left={26} />
+            <Buttony text="Ouvrir un compte gratuit" top={12} left={26} />
           </div>
           <div className="form">
             <select>
