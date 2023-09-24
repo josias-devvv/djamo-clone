@@ -52,7 +52,7 @@
   padding-right: 24px;
   position: relative;
   height: 306px;
-  transition: height 400ms;
+  transition: height 200ms;
   display: none;
 }
 #menu-drop ul {
@@ -75,7 +75,7 @@
 #menu-drop.close {
   overflow: hidden;
   height: 0;
-  transition: height 400ms;
+  transition: height 200ms;
 
   /* display: none; */
 }

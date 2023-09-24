@@ -2,6 +2,10 @@
   font-family: Futura;
   src: url("/src/fonts/FuturaPT-Book.ttf");
 }
+@font-face {
+  font-family: FuturaHeavy;
+  src: url("/src/fonts/FuturaPT-Heavy.ttf");
+}
 body {
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
