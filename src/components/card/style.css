@@ -1,0 +1,15 @@
+.cardo {
+  font-size: 20px;
+  background-color: cyan;
+  border-radius: 10px;
+}
+
+.cardo .svg-icon {
+  width: 30px;
+  margin-right: 12px;
+}
+
+.cardo-1 {
+  display: flex;
+  align-items: center;
+}

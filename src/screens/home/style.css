@@ -10,13 +10,9 @@
 }
 .cart-image {
   width: 200px;
-  /* transform: translateX(-90px) translateY(-10px); */
   position: absolute;
   bottom: 16px;
   right: 0;
-}
-.phone-image {
-  /* transform: translateX(50px); */
 }
 .hello-container h1 {
   font-size: 96px;
@@ -49,6 +45,7 @@
   background-color: rgba(249 250 251/1);
   border: 1px solid rgba(209 213 219/1);
   border-radius: 10px;
+  -moz-appearance: none;
   appearance: none;
   margin-right: 12px;
 }
@@ -63,7 +60,7 @@
 
   padding-right: 1.5rem;
 }
-.form input[type="text"] {
+.form input[type="tel"] {
   background-color: rgba(249 250 251/1);
   border: 1.5px solid rgba(209 213 219/1);
   padding: 6px 16px;
@@ -72,6 +69,8 @@
   outline: none;
   margin-right: 12px;
   width: 250px;
+  /* -moz-appearance: none;
+  appearance: none; */
 }
 
 .form input:focus {
@@ -83,13 +82,80 @@
 .hello-container {
   font-size: 20px;
 }
+.section-text {
+  font-size: 20px;
+  display: flex;
+  align-items: start;
+  /* justify-content: center; */
+  position: relative;
+}
+.svg {
+  width: 50px;
+  /* height: 40px; */
+  color: white;
+  margin-right: 12px;
+  position: relative;
+  top: 4px;
+}
+.section-text h3 {
+  color: white;
+  font-size: inherit;
+  font-weight: inherit;
+}
+.section-text p {
+  color: #6b7280;
+}
+.section2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 38px;
+  margin-top: 20px;
+}
+.services {
+  padding-top: 50px;
+}
+.services h2 {
+  font-size: 60px;
+  text-align: center;
 
+  background-clip: text;
+  background-image: linear-gradient(to right, #fd3c2d 30%, #0c29ff 80%);
+  color: transparent;
+  font-family: FuturaHeavy;
+}
+.services p {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 40px;
+}
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
 @media (max-width: 1140px) {
   .djamo-images {
     display: none;
   }
   .hello-container {
     margin-top: 56px;
+  }
+}
+@media (max-width: 1000px) {
+  .section2 {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 26px;
+    padding-top: 16px;
+  }
+  .svg {
+    width: 28px;
+    top: 0px;
+  }
+  .section-text {
+    margin-top: 20px;
   }
 }
 @media (max-width: 700px) {
@@ -122,13 +188,28 @@
     height: 56px;
   }
   .hello-container h1 {
-    font-size: 40px;
+    font-size: 45px;
     text-align: center;
   }
   .hello-text {
     font-size: 18px;
   }
+  .svg {
+    width: 40px;
+    top: 3px;
+  }
+  .section2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+  }
+  .section-text p {
+    font-size: 17px;
+  }
 }
 
-@media (min-width: 1450px) {
+@media (min-width: 645px) {
+  p {
+    line-height: 1.7rem;
+  }
 }
